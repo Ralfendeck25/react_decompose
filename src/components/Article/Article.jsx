@@ -1,5 +1,11 @@
-// import a css file containig article styles
+import React from 'react';
+import './Article.css';
 
-// Create an Article function returning the HTML of article block
+const Article = ({ title, content }) => (
+  <div className="post">
+    <h2>{title}</h2>
+    <p>{content}</p>
+  </div>
+);
 
-// Add a default export statement for Article component to use it in the other files
+export default Article;
