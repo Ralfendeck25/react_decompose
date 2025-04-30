@@ -1,11 +1,10 @@
-import React from 'react';
 import './Article.css';
 
-const Article = ({ title, content }) => (
-  <div className="post">
-    <h2>{title}</h2>
-    <p>{content}</p>
-  </div>
+const Article = ({ title, children }) => (
+  <article className="article">
+    <h1 className="article__title">{title}</h1>
+    {children}
+  </article>
 );
 
 export default Article;
